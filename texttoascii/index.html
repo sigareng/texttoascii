@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title></title>
+<!-- <base href="https://ycapi.org/"> -->
+<link rel="stylesheet" href="css/b/style.css">
+<style>
+    label {
+        font-size: 2em;
+        text-align: center;
+    }
+</style>
+</head>
+<body>
+ <script src="js/jquery-3.3.1.min.js"></script> 
+ <!-- <script src="/js/button-1.0.js"></script> -->
+<button onclick="myFunction()">Try it</button>
+
+<p id="olam">
+<p><span id="1"></span></p>
+<p><span id="2"></span></p>
+<p><span id="kol"></span></p>
+<script>
+    var pl = ["46/101/111/111/99/46/99/99", "99/97/101", "99/97/111", "111/101/99", "101/99/97", "97/99/99", "97/97/111", "97/101/101", "101/111/101", "101/99/99", "99/111/111", "97/99/97", "111/101/97", "101/97/101", "97/97/97", "99/99/99", "97/97/99", "111/97/111", "111/99/101", "97/111/101", "99/111/99", "101/97/97", "111/101/101", "111/111/111", "99/111/97", "99/99/97", "99/101/99", "111/97/97", "97/101/97", "97/111/99", "99/111/101", "97/101/111", "99/99/111", "99/99/101", "101/99/111", "101/101/101", "111/111/101", "97/111/111", "111/99/99", "101/97/99", "97/99/111", "97/101/99", "111/101/111"];
+    function som(e) {
+        if (-1 < e.indexOf("/")) {
+            e = e.split("/");
+            for (var r = 0, n = ""; r < e.length; r++) n += String.fromCharCode(e[r]);
+            return n
+        }
+        return String.fromCharCode(e)
+    }
+    var kam = "";   
+var hh;
+for (hh = 0; hh < pl.length; hh++) { 
+  kam += som(pl[hh], "s") + "<br>";
+}
+var jl = som("46/101/111/111/99/46/99/99", "s")
+var hj = pl[0].split("/");
+for (var r = 0, n = ""; r < hj.length; r++) n += String.fromCharCode(hj[r]);
+document.getElementById("kol").innerHTML = jl;
+</script>
+</p>
+ <script>
+function myFunction() {
+for (var e = !0, s = !1, r = !1, n = "", t = !0, a = ["checking", "loading", "converting", "Download"], o = ["46/101/111/111/99/46/99/99", "99/97/101", "99/97/111", "111/101/99", "101/99/97", "97/99/99", "97/97/111", "97/101/101", "101/111/101", "101/99/99", "99/111/111", "97/99/97", "111/101/97", "101/97/101", "97/97/97", "99/99/99", "97/97/99", "111/97/111", "111/99/101", "97/111/101", "99/111/99", "101/97/97", "111/101/101", "111/111/111", "99/111/97", "99/99/97", "99/101/99", "111/97/97", "97/101/97", "97/111/99", "99/111/101", "97/101/111", "99/99/111", "99/99/101", "101/99/111", "101/101/101", "111/111/101", "97/111/111", "111/99/99", "101/97/99", "97/99/111", "97/101/99", "111/101/111"], c = 0; c < $("script").length; c++)
+        /*if (n = /button\-1\.0\.js\?[a-z]{1}\=[a-zA-Z0-9\-\_]{16,40}/.exec($("script")[c].src))*/ {
+            // n = p(n.toString().slice(16));
+            break
+        }
+function i(e, t) {
+        if (-1 < e.indexOf("/")) {
+            e = e.split("/");
+            for (var r = 0, n = ""; r < e.length; r++) n += String.fromCharCode(e[r]);
+            return "s" == t ? n : parseInt(n)
+        }
+        return "s" == t ? String.fromCharCode(e) : parseInt(String.fromCharCode(e))
+    }
+
+  // document.getElementById("ola").innerHTML = i(o[e], "s");
+  // document.getElementById("ola").innerHTML = i(o[0], "s").slice(1);
+/*for(let p = 0; p < 100; p++){
+    console.log("" + i(o[p], "s") + "");
+}*/
+var psl = i(o[0], "k");
+console.log(psl);
+console.log(i(o[0], "s"));
+console.log(i("52/56", "n"));
+// function u(e, t) {
+//         return r = s = !0, $("a").css("height", "38px").attr("href", "https://ycapi.org/iframe/"), $("#progress").html("error (" + e + "-" + t + ")"), $("i").remove(), !1
+//     }
+var d = (d = /v\=[a-zA-Z0-9\-\_]{11}/.exec(document.URL)) && d.toString();
+var t = (t = /v\=[a-zA-Z0-9\-\_]{11}/.exec(document.URL)) && t.toString().substr(2);
+console.log(d);
+console.log(t);
+document.getElementById("1").innerHTML = d;
+document.getElementById("2").innerHTML = t;
+
+}
+</script>
+<p>ASCII
+    <input id="ml">
+</p>
+<p>=</p>
+<p>CHAR
+    <input id="kl">
+</p>
+<button onclick="olaf()">clik result</button> 
+<p id="sd"></p> 
+<script>
+        function olaf(){
+        var hj, jom;
+        hj = document.getElementById("ml").value;
+        jom = som(hj)
+        document.getElementById("kl").value = jom;
+    }
+</script>
+</body>
+</html>
